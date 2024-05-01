@@ -44,7 +44,7 @@ const doctorRoutes = [
     views: [
       {
         path: "/coin/stripe",
-        name: "stripe",
+        name: "Purchase Coins",
       },
     ],
   },

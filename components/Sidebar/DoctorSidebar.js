@@ -31,7 +31,7 @@ function DoctorSidebar() {
     },
     {
       path: ["stripe"],
-      name: "Stripe",
+      name: "Purchase Coins",
     },
     {
       path: ["market"],
