@@ -1,0 +1,150 @@
+@import "tailwindcss/base";
+
+* {
+  scrollbar-width: 0px;
+  scrollbar-color: #1c6ba4;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1c6ba4;
+  border-radius: 14px;
+  border: 1px solid #ffffff;
+}
+
+body {
+  background-color: #f8fafb;
+}
+
+ul,
+ul li {
+  list-style-type: inherit;
+}
+
+ul,
+ol {
+  padding-left: 30px;
+}
+
+ol,
+ol li {
+  list-style-type: decimal;
+}
+
+@import "tailwindcss/components";
+
+.btn {
+  color: white;
+}
+
+.card {
+  background-color: white;
+}
+
+/************************************************************************************/
+/* Zoom Video SDK
+/************************************************************************************/
+[role="dialog"] {
+  width: 0;
+  height: 0;
+  z-index: 5 !important;
+}
+
+/************************************************************************************/
+/* React Big Calendar
+/************************************************************************************/
+.rbc-row-content {
+  z-index: 0 !important;
+}
+
+/************************************************************************************/
+/* CK Editor
+/************************************************************************************/
+.ck-content {
+  height: 20rem;
+}
+
+.create-post .ck-editor__editable {
+  min-height: 100px !important;
+  height: 250px !important;
+}
+
+.create-post .ck-editor__editable_inline {
+  padding: 0 15px !important;
+}
+
+.comment .ck-editor__editable,
+.reply .ck-editor__editable,
+.subreply .ck-editor__editable {
+  min-height: 100px !important;
+  height: 150px !important;
+}
+
+.reply .ck.ck-reset.ck-editor,
+.edit-comment .ck.ck-reset.ck-editor,
+.edit-reply .ck.ck-reset.ck-editor {
+  min-width: 600px;
+  width: 400px;
+}
+
+.subreply .ck.ck-reset.ck-editor,
+.edit-reply .ck.ck-reset.ck-editor {
+  min-width: 565px;
+  width: 400px;
+}
+
+.ck-editor__editable_inline {
+  padding: 0 30px !important;
+}
+
+.ck.ck-content ul,
+.ck.ck-content ul li {
+  list-style-type: inherit;
+}
+.ck.ck-content ul {
+  padding-left: 30px;
+}
+
+.ck.ck-content ol,
+.ck.ck-content ol li {
+  list-style-type: decimal;
+}
+.ck.ck-content ol {
+  padding-left: 30px;
+}
+
+.ck-editor__editable {
+  min-height: 450px;
+}
+.icon-container {
+  display: flex;
+  align-items: flex-end; /* Center vertically within the container */
+  margin-right: 10px; /* Adjust the right margin to control spacing */
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .reply .ck.ck-reset.ck-editor,
+  .edit-comment .ck.ck-reset.ck-editor,
+  .edit-reply .ck.ck-reset.ck-editor {
+    min-width: 270px;
+    width: 150px;
+  }
+
+  .subreply .ck.ck-reset.ck-editor,
+  .edit-reply .ck.ck-reset.ck-editor {
+    min-width: 240px;
+    width: 150px;
+  }
+}
+
+@import "tailwindcss/utilities";
