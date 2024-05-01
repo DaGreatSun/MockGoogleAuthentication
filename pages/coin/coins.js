@@ -45,7 +45,7 @@ function Coins({ passedCoins }) {
       <img
         src={"/piggybank.avif"}
         alt="image"
-        referrerpolicy="no-referrer"
+        referrerPolicy="no-referrer"
         className="h-40 rounded-3xl object-contain"
       />
       <h1 className="text-2xl">{passedCoins ?? coins} Coins In The Bank!</h1>

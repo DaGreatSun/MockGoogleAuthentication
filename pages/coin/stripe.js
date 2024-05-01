@@ -4,6 +4,7 @@ import { Button, Card } from "react-daisyui";
 import { useSession } from "next-auth/react";
 import Coins from "./coins";
 import { useRouter } from "next/router";
+import { updateCoins } from "@helpers/utils";
 
 function Stripe() {
   /***************************************************************************************/

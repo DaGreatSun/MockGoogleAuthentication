@@ -46,7 +46,7 @@ function Dashboard() {
           <img
             src={userObj.image}
             alt="image"
-            referrerpolicy="no-referrer"
+            referrerPolicy="no-referrer"
             className="h-40 rounded-3xl"
           />
           {renderTitle("Name", userObj.name)}
