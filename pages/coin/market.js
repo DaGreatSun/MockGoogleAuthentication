@@ -111,7 +111,7 @@ function Stripe() {
   }, [session, coins]);
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
       <Card className="col-span-1">
         <Card.Body className="flex justify-center items-center flex-col">
           <Coins passedCoins={coins} />
@@ -123,7 +123,7 @@ function Stripe() {
         </Card.Body>
       </Card>
       <Button
-        className="col-span-2 bg-red-500 hover:bg-red-600"
+        className="col-span-1 lg:col-span-2 bg-red-500 hover:bg-red-600"
         onClick={(e) => {
           router.push("/dashboard");
         }}

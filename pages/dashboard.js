@@ -40,7 +40,7 @@ function Dashboard() {
   }, [session]);
 
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
       <Card className="col-span-1">
         <Card.Body className="flex items-center flex-col">
           <img
